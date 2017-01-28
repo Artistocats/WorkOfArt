@@ -1,0 +1,369 @@
+@font-face
+{
+	font-family:dancing;
+	src: url('dancing.otf');
+}
+@font-face
+{
+  font-family:Parisish;
+  src: url('Parisish.ttf');
+}
+body
+{
+	background-image: url("images/back.jpg");
+	width:1200px;
+  font-family:arial;
+  padding-bottom:100px;
+}
+
+h1
+{
+  font-family:dancing;
+	text-align:	center;
+	margin-bottom: 1em;
+}
+p#hometext
+{
+  font-family: Parisish ;
+  font-size:25px;
+  font-style: italic;
+  text-align: center;
+  margin-left: 2em;
+  font-weight: 600;
+  line-height: 200%;
+
+}
+a
+{
+	text-decoration:none;
+	color:inherit;
+}
+
+
+
+th, td
+{
+    border: 1px solid black;
+    white-space: nowrap;
+
+}
+
+
+
+td.ddA
+{
+  white-space: normal;
+}
+
+td.favourite
+{
+  text-align: center;
+}
+
+.favourite span
+{
+  display: none;
+}
+
+.dd select
+{
+  width: 175px;
+}
+
+tr:hover td {background: #ffdab3 !important}
+
+input,select
+{
+  font-size: 12pt;
+}
+
+
+/*------TABLESORTER------*/
+/* tables */
+table.tablesorter {
+  font-family:arial;
+  background-color: #fff3e6;
+  margin:10px 0pt 15px;
+  font-size: 12pt;
+  width: 100%;
+  margin-left:90px;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+  background-color: #ffb366;
+  border: 1px solid black;
+  font-size: 12pt;
+  padding: 4px;
+}
+table.tablesorter thead tr .header {
+  background-image: url(images/bg.gif);
+  background-repeat: no-repeat;
+  background-position: center right;
+  cursor: pointer;
+}
+table.tablesorter tbody td {
+  color: #3D3D3D;
+  padding: 4px;
+  background-color: #FFF;
+  vertical-align: top;
+}
+
+table.tablesorter tbody tr.odd td {
+  background-color:#fff3e6;
+}
+
+table.tablesorter thead tr .headerSortUp {
+  background-image: url(images/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+  background-image: url(images/desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #ff9933;
+}
+
+table.artists_table, table.exhibitions_table
+{
+  width:750px;
+}
+
+
+table.desciption_table, table.movements_table, table.users_table
+{
+  width:500px;
+}
+/*------TABLESORTER ENDS------*/
+
+#logo{
+  width:60px;
+  height:60px;
+  position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.nosort
+{
+  background: #fff3e6 !important;
+  border-style: none !important;
+  text-align: center;
+}
+
+
+
+.edit, .confirm, .cancel, .delete, .fav, .no_fav, .add, .add_select, .remove_select
+{
+  cursor: pointer;
+  border: none;
+  height:24px;
+  width:24px;
+}
+
+.edit
+{
+  background: url(images/edit.png) no-repeat;
+}
+
+.delete
+{
+  background: url(images/delete.png) no-repeat;
+}
+
+.confirm
+{
+  background: url(images/confirm.png) no-repeat;
+}
+
+.cancel, .remove_select
+{
+  background: url(images/cancel.png) no-repeat;
+}
+
+.fav
+{
+  background: url(images/fav.png) no-repeat;
+}
+
+.no_fav
+{
+  background: url(images/no_fav.png) no-repeat;
+}
+
+.add, .add_select
+{
+  background: url(images/add.png) no-repeat;
+}
+
+
+
+
+/* Menu Bar Style Starts*/
+ul#bar
+{
+	padding: 0;
+  margin: 20px 0px 20px 80px;
+}
+
+ul#bar li
+{
+	font-family:dancing;
+	font-size: 2em;
+	display: inline;
+	text-align: center;
+	margin:1px;
+}
+
+ul#bar li a {
+    background-color: #ff8400;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+ul#bar li a:hover
+{
+    background-color: #e67700;
+}
+/* Menu Bar Style Ends */
+
+#login
+{
+	font-family:dancing;
+	float:	left;
+	text-align:center;
+	width:	50%;
+}
+
+#signup
+{
+	font-family:dancing;
+	float:	right;
+	text-align:center;
+	width:	50%;
+}
+
+#footer
+{
+  clear:	both;
+}
+
+
+
+
+.error
+{
+	color: red;
+}
+
+
+/* Search Bar Style Starts*/
+#search_bar
+{
+    text-align: left;
+    background-color: #ff8400;
+    color: white;
+    display: block;
+    margin-top: 0em;
+    padding: 10px 20px;
+    text-decoration: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left:0;
+}
+
+#search_bar form
+{
+ display:inline;
+}
+
+.bar_input
+{
+  width: 240px;
+  margin-left: 10px;
+  font-family:Helvetica;
+}
+
+input {
+ display:inline;
+}
+.submit_btn
+{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 538px;
+  bottom:11px;
+  cursor: pointer;
+
+}
+/* Search Bar Style Ends*/
+
+
+
+
+
+/* Form style */
+input[type=text].inputs,
+input[type=number].inputs, select.inputs {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea.inputs{
+    width: 100%;
+    height: 80px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+input[type=submit].inputs {
+    width: 100%;
+    background-color: #ff9933;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit].inputs:hover {
+    background-color: #ffb366;
+}
+
+#homepic
+{
+    float: right;
+    margin: 2px 0 15px 10px;
+}
+
+#account
+{
+
+  margin-left: 140px;
+  margin-top: 50px;
+}
+
+.user_details
+{
+  font-family: Parisish;
+  font-size: 25pt;
+    font-weight: 600;
+}
+
+.description
+{
+  margin-left:90px;
+}
